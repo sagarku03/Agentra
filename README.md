@@ -432,13 +432,12 @@ antigem/
 
 ## Related projects
 
-AntiGem comes in three parts that link to each other:
+Agentra ecosystem:
 
 | Project | What it is | Repository |
 |---|---|---|
-| **AntiGem** (Android app) | The coding agents, a Linux terminal, an editor and a browser on your phone. With **Connect to PC** it also uses the agents of a PC that runs AntiGem for VS Code. | [Santoshkurmi/antigem](https://github.com/Santoshkurmi/antigem) |
-| **AntiGem for VS Code** | The same agents and chat in a VS Code sidebar. Its **Connect phone** lets the app on your phone use them. | [Santoshkurmi/antigem_vscode_extension](https://github.com/Santoshkurmi/antigem_vscode_extension) · install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension), [Open VSX](https://open-vsx.org/extension/santoshkurmi/antigem-vscode-extension) |
-| **AntiGem Browser Bridge** (Chrome extension) | Lets agents in AntiGem for VS Code use your real Chrome. Not needed by the Android app, which has its own browser. | [Santoshkurmi/antigem-browser-extension](https://github.com/Santoshkurmi/antigem-browser-extension) · not in the Chrome Web Store yet: installed with *Load unpacked* from AntiGem for VS Code |
+| **Agentra** (Android app) | The coding agents, a Linux terminal, an editor and a browser on your phone. With **Connect to PC** it also uses PC agents. | [sagarku03/Agentra](https://github.com/sagarku03/Agentra) |
+| **Agentra Plugins** | Extensions, plugins, and custom tool suites for Agentra workspace. | [sagarku03/AgentraPlugins](https://github.com/sagarku03/AgentraPlugins) |
 
 ## Disclaimer
 
