@@ -349,8 +349,8 @@ private fun ManualSetupCard(desktop: Desktop, cardBg: Color, cardBorder: BorderS
     }
 }
 
-private const val ANTIGEM_RELEASES = "https://github.com/Santoshkurmi/antigem/releases/latest"
-private const val ANTIGEM_README_SHARED_UID = "https://github.com/Santoshkurmi/antigem#termux-compatibility"
+private const val ANTIGEM_RELEASES = "https://github.com/sagarku03/Agentra/releases/latest"
+private const val ANTIGEM_README_SHARED_UID = "https://github.com/sagarku03/Agentra#termux-compatibility"
 
 /**
  * Shown on the standalone com.termux build in place of a feature that needs a companion app sharing

@@ -17,7 +17,7 @@ import java.io.File
 import java.util.concurrent.TimeUnit
 
 private const val TAG = "AppUpdateManager"
-private const val DEFAULT_VERSION_URL = "https://raw.githubusercontent.com/santoshkurmi/antigem/master/version.json"
+private const val DEFAULT_VERSION_URL = "https://raw.githubusercontent.com/sagarku03/Agentra/master/version.json"
 
 data class AppUpdateInfo(
     val versionCode: Int,
@@ -55,7 +55,7 @@ class AppUpdateManager(private val context: Context) {
         try {
             val request = Request.Builder()
                 .url(versionJsonUrl)
-                .header("User-Agent", "antiGem-Updater/${BuildConfig.VERSION_NAME}")
+                .header("User-Agent", "Agentra-Updater/${BuildConfig.VERSION_NAME}")
                 .header("Cache-Control", "no-cache")
                 .build()
 
@@ -101,14 +101,14 @@ class AppUpdateManager(private val context: Context) {
                 currentPkg == "com.termux" -> "termux"
                 else -> "standard"
             }
-            val downloadUrl = "https://github.com/santoshkurmi/antigem/releases/download/v$remoteVersionName/antiGem-$flavorType-v$remoteVersionName-release.apk"
+            val downloadUrl = "https://github.com/sagarku03/Agentra/releases/download/v$remoteVersionName/Agentra-$flavorType-v$remoteVersionName-release.apk"
 
             if (remoteVersionCode > BuildConfig.VERSION_CODE && downloadUrl.isNotBlank()) {
                 // Verify that the APK asset is actually published and downloadable on GitHub
                 val probeRequest = Request.Builder()
                     .url(downloadUrl)
                     .head()
-                    .header("User-Agent", "antiGem-Updater/${BuildConfig.VERSION_NAME}")
+                    .header("User-Agent", "Agentra-Updater/${BuildConfig.VERSION_NAME}")
                     .build()
 
                 val isAvailable = try {

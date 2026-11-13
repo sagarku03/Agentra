@@ -3,7 +3,8 @@
   "version_name": "1.1.8",
   "min_supported_version_code": 1,
   "changelog": [
-    "Added Connect to PC: use the agents running in AntiGem for VS Code on your PC from your phone, with the same chats live on both. Pair once in Settings → Connect to PC (pick the PC from Nearby PCs and type the 6-digit code VS Code shows), then switch between your PCs and this phone from the new PC button in the side bar",
+    "Rebranded to Agentra (An AI Agentic Assistant by Sagar Kumar). Completely private with TelemetryDeck removed, fresh release keystore, and custom plugins support.",
+    "Added Connect to PC: use the agents running in Agentra for VS Code on your PC from your phone, with the same chats live on both. Pair once in Settings → Connect to PC (pick the PC from Nearby PCs and type the 6-digit code VS Code shows), then switch between your PCs and this phone from the new PC button in the side bar",
     "Added folder tabs in Files: open several folders side by side and copy between them (always on with a PC or server, turn them on with the new tabs button otherwise)",
     "Claude Code subagents are listed under their chat in the side bar and open read-only; the agents chip in the Claude strip shows how many run and lists them as a tree, nested ones under the agent that started them. OpenCode child sessions and Codex spawned agents nest under their chat too",
     "Fixed answered question cards: Claude Code no longer repeats every question in each answer, and OpenCode now shows each question with its own answer",

@@ -47,11 +47,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gemini">
-        <!-- The SDK's auto-start provider has no namespace setting. The app starts TelemetryDeck itself. -->
-        <provider
-            android:name="com.telemetrydeck.sdk.TelemetryDeckInitProvider"
-            android:authorities="${applicationId}.TelemetryDeckInitProvider"
-            tools:node="remove" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

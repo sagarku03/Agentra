@@ -8926,7 +8926,7 @@ private fun AboutSubScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clickable {
-                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/santoshkurmi/antigem"))
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sagarku03/Agentra"))
                             context.startActivity(intent)
                         }
                 ) {
@@ -8953,7 +8953,7 @@ private fun AboutSubScreen(
                                     color = MaterialTheme.colorScheme.onSurface
                                 )
                                 Text(
-                                    text = "github.com/santoshkurmi/antigem",
+                                    text = "github.com/sagarku03/Agentra",
                                     fontSize = 11.sp,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
@@ -8974,7 +8974,7 @@ private fun AboutSubScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clickable {
-                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/santoshkurmi/antigem/releases"))
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sagarku03/Agentra/releases"))
                             context.startActivity(intent)
                         }
                 ) {

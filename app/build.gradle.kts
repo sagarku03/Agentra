@@ -30,7 +30,7 @@ android {
     namespace = "com.example.gemini"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.antigem"
+        applicationId = "com.agentra.ai"
         minSdk = 24
         targetSdk = 28
         versionCode = appVersionCode
@@ -44,9 +44,9 @@ android {
     signingConfigs {
         create("release") {
             storeFile = file("release.jks")
-            storePassword = "123456"
-            keyAlias = "antigem"
-            keyPassword = "123456"
+            storePassword = "sagar7846"
+            keyAlias = "Agentrakey"
+            keyPassword = "sagar7846"
         }
     }
 
@@ -56,7 +56,7 @@ android {
         // (com.antigem: +2, so its bridge port never equals com.termux's hub port).
         create("standard") {
             dimension = "mode"
-            applicationId = "com.antigem"
+            applicationId = "com.agentra.ai"
             buildConfigField("int", "BRIDGE_PORT", "1236")
             buildConfigField("int", "HUB_PORT", "1237")
             buildConfigField("int", "BROWSER_MCP_PORT", "8767")
@@ -95,7 +95,7 @@ android {
     }
 
     base {
-        archivesName.set("antiGem")
+        archivesName.set("Agentra")
     }
 
     compileOptions {
@@ -177,7 +177,6 @@ dependencies {
   implementation(libs.androidx.webkit)
   implementation(libs.kotlinx.serialization.json)
   implementation(libs.androidx.datastore.preferences)
-  implementation("com.telemetrydeck:kotlin-sdk:6.0.1")
 
   // Image Loading (Coil for Markdown Images and IDE Asset Viewer)
   implementation("io.coil-kt:coil-compose:2.7.0")

@@ -213,7 +213,7 @@ fun JarvisSettingsSectionPage(page: JarvisSettingsPage, cardBg: Color, cardBorde
                     OutlinedTextField(
                         value = about, onValueChange = { P.aboutUser.set(it.take(2000)) },
                         label = { Text("About you and extra instructions") },
-                        placeholder = { Text("e.g. Call me Santosh. Reply in Hinglish. I mostly work on the antigem project.", fontSize = 12.sp) },
+                        placeholder = { Text("e.g. Call me Sir. Reply in Hinglish. I mostly work on the Agentra project.", fontSize = 12.sp) },
                         modifier = Modifier.fillMaxWidth(), minLines = 3, maxLines = 8
                     )
                     JHint("Sent with the first message of every new Jarvis chat. When you change it (or the persona), the open chat is told with your next message. " +

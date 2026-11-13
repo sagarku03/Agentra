@@ -1,19 +1,19 @@
 <div align="center">
 
-<img src="docs/readme/icon.svg" alt="AntiGem app icon" width="112">
+<img src="docs/readme/icon.svg" alt="Agentra app icon" width="112">
 
-# AntiGem
+# Agentra
 
-*A gem that defies gravity. A full coding environment, light enough to carry in your pocket.*
+*An AI Agentic Assistant. A full coding environment, light enough to carry in your pocket.*
 
 **An AI coding workspace for Android: Antigravity, Claude Code, OpenCode and Codex agents, a real Linux terminal, a code editor and a browser the agent can control, all in one app.**
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7F52FF?style=flat-square&logo=kotlin&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![Go](https://img.shields.io/badge/Bridge-Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-GPLv3-blue?style=flat-square)](LICENSE)
-[![Releases](https://img.shields.io/github/v/release/santoshkurmi/antigem?style=flat-square&label=Download)](https://github.com/santoshkurmi/antigem/releases)
+[![Releases](https://img.shields.io/github/v/release/sagarku03/Agentra?style=flat-square&label=Download)](https://github.com/sagarku03/Agentra/releases)
 
-[Download](https://github.com/santoshkurmi/antigem/releases) · [Website](https://santoshkurmi.github.io/antigem/) · [VS Code extension](https://github.com/Santoshkurmi/antigem_vscode_extension) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md) · [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4)
+[Download](https://github.com/sagarku03/Agentra/releases) · [Plugin SDK](extension_docs/README.md) · [User Guide](user_docs/README.md)
 
 <br>
 
@@ -440,22 +440,14 @@ AntiGem comes in three parts that link to each other:
 | **AntiGem for VS Code** | The same agents and chat in a VS Code sidebar. Its **Connect phone** lets the app on your phone use them. | [Santoshkurmi/antigem_vscode_extension](https://github.com/Santoshkurmi/antigem_vscode_extension) · install: [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension), [Open VSX](https://open-vsx.org/extension/santoshkurmi/antigem-vscode-extension) |
 | **AntiGem Browser Bridge** (Chrome extension) | Lets agents in AntiGem for VS Code use your real Chrome. Not needed by the Android app, which has its own browser. | [Santoshkurmi/antigem-browser-extension](https://github.com/Santoshkurmi/antigem-browser-extension) · not in the Chrome Web Store yet: installed with *Load unpacked* from AntiGem for VS Code |
 
-## Contributing
-
-Issues, ideas and pull requests are welcome. For help, join the [WhatsApp community](https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4).
-
-## Analytics
-
-AntiGem uses [TelemetryDeck](https://telemetrydeck.com) only to count how many people use the app. It records app opens, an anonymous install ID, session counts, and general device details (phone model, Android version, app version). It does **not** collect chats, prompts, code, files, terminal output, account emails or API keys. Debug builds are marked as test data.
-
 ## Disclaimer
 
-AntiGem is an independent project. It is not affiliated with, endorsed by or sponsored by Google, Anthropic, OpenAI, OpenCode or any other AI provider. Antigravity, Claude, Claude Code, Codex and other product names are trademarks of their owners and are used here only to say which tools the app works with.
+Agentra is an independent project. It is not affiliated with, endorsed by or sponsored by Google, Anthropic, OpenAI, OpenCode or any other AI provider. Antigravity, Claude, Claude Code, Codex and other product names are trademarks of their owners and are used here only to say which tools the app works with.
 
-AntiGem does not include these tools. You install each one from its official source and sign in with that tool's own login, and the app gives you an interface on top of it. Your use of each tool and account is covered by that provider's own terms, the same as when you use the tool from a terminal.
+Agentra does not include these tools. You install each one from its official source and sign in with that tool's own login, and the app gives you an interface on top of it. Your use of each tool and account is covered by that provider's own terms, the same as when you use the tool from a terminal.
 
-AntiGem is free software, provided as is, without warranty, as described in the [license](LICENSE).
+Agentra is free software, provided as is, without warranty, as described in the [license](LICENSE).
 
 ## License
 
-Copyright (C) 2026 Santosh Kurmi. Licensed under the [GNU General Public License v3.0](LICENSE) or any later version.
+Copyright (C) 2026 Sagar Kumar. Licensed under the [GNU General Public License v3.0](LICENSE) or any later version.
