@@ -72,7 +72,7 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import android.util.Log
-import com.example.gemini.data.admin.AntiGemDeviceAdminReceiver
+import com.example.gemini.data.admin.AgentraDeviceAdminReceiver
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -6294,21 +6294,21 @@ private fun DataProtectionSubScreen(
 ) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
-    var isAdminActive by remember { mutableStateOf(AntiGemDeviceAdminReceiver.isAdminActive(context)) }
+    var isAdminActive by remember { mutableStateOf(AgentraDeviceAdminReceiver.isAdminActive(context)) }
     var isShieldEnabled by remember { mutableStateOf(ManageSpaceActivity.isShieldEnabled(context)) }
     var showDeactivateAdminDialog by remember { mutableStateOf(false) }
 
     val adminLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.StartActivityForResult()
     ) {
-        isAdminActive = AntiGemDeviceAdminReceiver.isAdminActive(context)
+        isAdminActive = AgentraDeviceAdminReceiver.isAdminActive(context)
     }
 
     val lifecycleOwner = androidx.lifecycle.compose.LocalLifecycleOwner.current
     DisposableEffect(lifecycleOwner) {
         val observer = androidx.lifecycle.LifecycleEventObserver { _, event ->
             if (event == androidx.lifecycle.Lifecycle.Event.ON_RESUME) {
-                isAdminActive = AntiGemDeviceAdminReceiver.isAdminActive(context)
+                isAdminActive = AgentraDeviceAdminReceiver.isAdminActive(context)
                 isShieldEnabled = ManageSpaceActivity.isShieldEnabled(context)
             }
         }
@@ -6426,12 +6426,12 @@ private fun DataProtectionSubScreen(
                     Button(
                         onClick = {
                             try {
-                                val intent = AntiGemDeviceAdminReceiver.createActivationIntent(context)
+                                val intent = AgentraDeviceAdminReceiver.createActivationIntent(context)
                                 adminLauncher.launch(intent)
                             } catch (e: Exception) {
                                 Log.w("SettingsDialog", "Direct admin prompt failed, opening Device Admin settings", e)
                                 try {
-                                    context.startActivity(AntiGemDeviceAdminReceiver.createDeviceAdminSettingsIntent())
+                                    context.startActivity(AgentraDeviceAdminReceiver.createDeviceAdminSettingsIntent())
                                 } catch (e2: Exception) {
                                     Toast.makeText(context, "Could not open Device Admin: ${e2.message}", Toast.LENGTH_SHORT).show()
                                 }
@@ -6450,7 +6450,7 @@ private fun DataProtectionSubScreen(
                     OutlinedButton(
                         onClick = {
                             try {
-                                context.startActivity(AntiGemDeviceAdminReceiver.createDeviceAdminSettingsIntent())
+                                context.startActivity(AgentraDeviceAdminReceiver.createDeviceAdminSettingsIntent())
                             } catch (e: Exception) {
                                 Toast.makeText(context, "Could not open settings: ${e.message}", Toast.LENGTH_SHORT).show()
                             }
@@ -6582,7 +6582,7 @@ private fun DataProtectionSubScreen(
             title = { Text("Disable Uninstall Protection?") },
             text = {
                 Text(
-                    "This will remove AntiGem's Device Admin status. The app will become vulnerable to accidental home-screen uninstallation.",
+                    "This will remove Agentra's Device Admin status. The app will become vulnerable to accidental home-screen uninstallation.",
                     fontSize = 13.sp
                 )
             },
@@ -6590,11 +6590,11 @@ private fun DataProtectionSubScreen(
                 Button(
                     onClick = {
                         showDeactivateAdminDialog = false
-                        AntiGemDeviceAdminReceiver.deactivateAdmin(context)
+                        AgentraDeviceAdminReceiver.deactivateAdmin(context)
                         isAdminActive = false
                         scope.launch {
                             delay(300)
-                            isAdminActive = AntiGemDeviceAdminReceiver.isAdminActive(context)
+                            isAdminActive = AgentraDeviceAdminReceiver.isAdminActive(context)
                         }
                     },
                     colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)

@@ -7,7 +7,8 @@
     "Rebranded core application classes to AgentraApplication and AgentraDeviceAdminReceiver.",
     "Rebranded chat export and share directories to Agentra/Exports.",
     "Updated Termux-API and Termux-X11 download links to official repositories.",
-    "Rebranded default app themes to agentra_light and agentra_dark."
+    "Rebranded default app themes to agentra_light and agentra_dark.",
+    "Fixed SettingsDialog DeviceAdmin references to AgentraDeviceAdminReceiver."
   ],
   "is_critical": false
 }
