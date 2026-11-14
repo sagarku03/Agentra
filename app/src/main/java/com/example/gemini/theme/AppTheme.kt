@@ -307,10 +307,10 @@ object ThemeTokens {
 
 /** The themes that come with the app. */
 object BuiltInThemes {
-    const val LIGHT_DEFAULT = "antigem_light"
+    const val LIGHT_DEFAULT = "agentra_light"
     const val DARK_DEFAULT = "midnight_aurora"
-    /** The original AntiGem dark look (no longer the default; the id stays so a saved choice still finds it). */
-    private const val ANTIGEM_DARK = "antigem_dark"
+    /** The original Agentra dark look (no longer the default; the id stays so a saved choice still finds it). */
+    private const val AGENTRA_DARK = "agentra_dark"
 
     /** How many themes at the top of each side's list are marked as recommended (the first is the default). */
     const val RECOMMENDED_COUNT = 3
@@ -318,12 +318,12 @@ object BuiltInThemes {
     private val oneDarkSyntax = listOf(0xFFC678DD, 0xFFE5C07B, 0xFF98C379, 0xFFD19A66, 0xFF7F848E, 0xFF61AFEF, 0xFFE5C07B, 0xFFABB2BF)
     private val syntaxKeys = listOf("syntax_keyword", "syntax_type", "syntax_string", "syntax_number", "syntax_comment", "syntax_function", "syntax_annotation", "syntax_punctuation")
 
-    /** The original AntiGem look, exactly as before themes existed (other Material slots stay at Material's defaults). */
-    private fun antigem(dark: Boolean) = AppTheme(
-        id = if (dark) ANTIGEM_DARK else LIGHT_DEFAULT,
+    /** The original Agentra look, exactly as before themes existed (other Material slots stay at Material's defaults). */
+    private fun agentra(dark: Boolean) = AppTheme(
+        id = if (dark) AGENTRA_DARK else LIGHT_DEFAULT,
         name = if (dark) "Amber Night" else "Porcelain",
         dark = dark, builtIn = true,
-        about = if (dark) "AntiGem's original warm dark look with the amber accent" else "AntiGem's original clean light look with the amber accent",
+        about = if (dark) "Agentra's original warm dark look with the amber accent" else "Agentra's original clean light look with the amber accent",
         colors = buildMap {
             put("primary", 0xFFD97706); put("secondary", 0xFFB45309); put("on_primary", 0xFFFFFFFF)
             if (dark) {
@@ -409,7 +409,7 @@ object BuiltInThemes {
     val all: List<AppTheme> by lazy {
         listOf(
             // light, best first: the first is the default and the first RECOMMENDED_COUNT are marked as recommended
-            antigem(false),
+            agentra(false),
             seeded("lavender", "Lavender", "Soft lilac with a violet accent", false,
                 0xFFF8F6FD, 0xFFF8F6FD, 0xFFFFFFFF, 0xFFECE7F8, 0xFF241B3A, 0xFF655B7F,
                 0xFF7C3AED, 0xFFA855F7, 0xFFDB2777, 0xFF15803D, 0xFFB45309, 0xFFDC2626, 0xFF2563EB,
@@ -456,7 +456,7 @@ object BuiltInThemes {
                 0xFF000000, 0xFF000000, 0xFF0D0D0D, 0xFF1F1F1F, 0xFFFFFFFF, 0xFFD4D4D4,
                 0xFFFFD60A, 0xFF00E5FF, 0xFFFF6EFF, 0xFF00E676, 0xFFFFC400, 0xFFFF5252, 0xFF40C4FF,
                 0xFF000000, listOf(0xFFFF6EFF, 0xFFFFD60A, 0xFF00E676, 0xFFFF9E40, 0xFFBDBDBD, 0xFF40C4FF, 0xFFFFD60A, 0xFFFFFFFF)),
-            antigem(true),
+            agentra(true),
             seeded("mocha", "Mocha", "Cozy pastel dark: lavender, pink and sky on deep cocoa-blue", true,
                 0xFF1E1E2E, 0xFF1E1E2E, 0xFF252536, 0xFF313244, 0xFFCDD6F4, 0xFFA6ADC8,
                 0xFFCBA6F7, 0xFFF5C2E7, 0xFF89B4FA, 0xFFA6E3A1, 0xFFF9E2AF, 0xFFF38BA8, 0xFF89DCEB,

@@ -317,9 +317,9 @@ private fun ManualSetupCard(desktop: Desktop, cardBg: Color, cardBorder: BorderS
     var open by remember { mutableStateOf(false) }
     val start = "termux-x11 :0 -xstartup \"${desktop.startCommand}\""
     val commands = listOf(
-        "1. Install antigem-termux-x11-sharedUid.apk and download antigem-termux-x11-*-all.deb from ${X11DesktopManager.FORK_RELEASES_PAGE}" to null,
+        "1. Install termux-x11 apk and download termux-x11 deb from ${X11DesktopManager.FORK_RELEASES_PAGE}" to null,
         "2. Enable x11-repo" to "pkg install x11-repo",
-        "3. Install the termux-x11 command (in the folder with the .deb)" to "apt install ./antigem-termux-x11-*-all.deb",
+        "3. Install the termux-x11 command" to "pkg install termux-x11-nightly",
         "4. Install a desktop" to "pkg install dbus ${desktop.packages}",
         "5. Start it, then open Termux:X11" to start
     )

@@ -168,9 +168,9 @@ class MainActivity : ComponentActivity() {
 
             LaunchedEffect(isFloatingDiagnosticsEnabled) {
                 if (isFloatingDiagnosticsEnabled) {
-                    com.example.gemini.data.remote.core.AntiGemLiveDiagnostics.start()
+                    com.example.gemini.data.remote.core.AgentraLiveDiagnostics.start()
                 } else {
-                    com.example.gemini.data.remote.core.AntiGemLiveDiagnostics.stop()
+                    com.example.gemini.data.remote.core.AgentraLiveDiagnostics.stop()
                 }
             }
 

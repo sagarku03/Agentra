@@ -86,7 +86,7 @@ Lists all active webview extensions:
 ### B. Repositories Tab
 Browse community and third-party plugin repositories to install pre-built add-ons with a single tap.
 
-Two official repositories are in the list by default: `dipeshkrydv/antigem_plugins` and `Santoshkurmi/antigem_plugins` (which has the REA reverse-engineering skill). AntiGem adds each one once; if you remove one, it stays removed until you add it again.
+The official repository is configured by default: `sagarku03/AgentraPlugins` (which includes plugins and the REA reverse-engineering skill). Agentra adds it once; if you remove it, it stays removed until you add it again.
 
 ### C. Installing & Updating from ZIP:
 1. Tap **Install ZIP** and pick an archive:

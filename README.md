@@ -204,8 +204,8 @@ Each one is a one-tap preset in **Settings → MCP Servers**, for every agent.
 - In-app browser for previewing local dev servers and testing web apps.
 - Desktop and mobile modes, a steady browser identity that keeps Google sign-in working, and built-in Eruda DevTools.
 
-### Connect to PC (with AntiGem for VS Code)
-Use the agents running on your PC from your phone. [AntiGem for VS Code](https://github.com/Santoshkurmi/antigem_vscode_extension) runs them on the PC, and the app becomes a second screen for the same chats.
+### Connect to PC
+Use the agents running on your PC from your phone. The app connects to your PC and becomes a second screen for the same chats.
 - **Same chats on both:** start a chat in VS Code and continue it on the phone, or the other way round. Replies stream live on both, and every agent (Antigravity, Claude Code, Codex, OpenCode) works, with its subagents, images and files.
 - **Pair once, no typing of addresses:** in VS Code open **Settings → Connect phone → Start pairing**. On the phone, turn on **Settings → Connect to PC**, tap **Add a PC**, pick the PC from **Nearby PCs** and type the 6-digit code it shows. If the PC is not listed (guest Wi-Fi), type the address shown on the PC.
 - **Switch in one tap:** the PC button in the side bar lists your paired PCs; pick one, or go back to **Use this phone**. Several PCs can be paired.
@@ -228,7 +228,7 @@ Use the agents running on your PC from your phone. [AntiGem for VS Code](https:/
 
 ## Download
 
-Get the latest APK from [Releases](https://github.com/santoshkurmi/antigem/releases). There are two build variants, and one extra **mode** that works with either of them:
+Get the latest APK from [Releases](https://github.com/sagarku03/Agentra/releases). There are two build variants, and one extra **mode** that works with either of them:
 
 | Variant | Package name | Needs the Termux app? | Notes |
 | :--- | :--- | :---: | :--- |
@@ -273,26 +273,26 @@ AntiGem has essential Termux:API commands built in with zero setup:
 
 For advanced hardware APIs (such as `termux-location`, `termux-camera-photo`, `termux-sensor`, `termux-sms-*`, `termux-wifi-*`), install the matching signed companion app:
 
-👉 **[Download AntiGem Termux:API Companion App](https://github.com/Santoshkurmi/termux-api/releases)**
+👉 **[Download Termux:API Companion App](https://github.com/termux/termux-api/releases)**
 
 > [!IMPORTANT]
-> **AntiGem Variant Requirement for Termux:API:**
-> - To use the external Termux:API companion app, you **must install the Shared UID variant** (`antiGem-termux-shared-v...apk`). Both apps share the `com.termux` Linux UID to communicate via UNIX sockets.
+> **Variant Requirement for Termux:API:**
+> - To use the external Termux:API companion app, you **must install the Shared UID variant** (`Agentra-termux-shared-v...apk`). Both apps share the `com.termux` Linux UID to communicate via UNIX sockets.
 > - **Existing Users:** Android does not allow changing `sharedUserId` via an update (`INSTALL_FAILED_SHARED_USER_INCOMPATIBLE`). If you currently have the Standalone build installed, you must **backup your files, uninstall the app, and install the Shared UID build**.
-> - You can check your current variant in AntiGem under **Settings → About & Info** (shows *Shared UID Build* or *Standalone Build*).
+> - You can check your current variant in Agentra under **Settings → About & Info** (shows *Shared UID Build* or *Standalone Build*).
 
 **How to enable:**
-1. Install the companion APK from the [releases page](https://github.com/Santoshkurmi/termux-api/releases).
-2. In AntiGem, go to **Settings → Termux Support → Termux:API** and select **External Termux:API App**.
+1. Install the companion APK from the [official Termux releases page](https://github.com/termux/termux-api/releases).
+2. In Agentra, go to **Settings → Termux Support → Termux:API** and select **External Termux:API App**.
 3. Tap **Reinstall Package Now** (or run `pkg reinstall termux-api` in the terminal) to restore the official dispatcher binary.
 
 #### X11 desktop
 
-AntiGem can run a Linux desktop (XFCE or LXQt) with [Termux:X11](https://github.com/termux/termux-x11). It uses AntiGem's own build of Termux:X11, signed to share the `com.termux` UID, so the desktop runs inside AntiGem's process and Android doesn't slow it down or stop it while you use it. This needs the **Shared UID build**.
+Agentra can run a Linux desktop (XFCE or LXQt) with [Termux:X11](https://github.com/termux/termux-x11). It can share the `com.termux` UID, so the desktop runs inside the process and Android doesn't slow it down or stop it while you use it. This needs the **Shared UID build**.
 
 Go to **Settings → Termux Support → X11 Desktop** and follow the steps: install the Termux:X11 app, the `termux-x11` command and a desktop, then tap **Start**.
 
-To set it up by hand instead, get `antigem-termux-x11-sharedUid.apk` and `antigem-termux-x11-*-all.deb` from the [AntiGem Termux:X11 releases](https://github.com/Santoshkurmi/termux-x11/releases/latest), install the APK, and run:
+To set it up by hand instead, get the APK and package from the [Termux:X11 releases](https://github.com/termux/termux-x11/releases/latest), install the APK, and run:
 
 ```bash
 pkg install x11-repo
@@ -396,8 +396,8 @@ The Backups & Restore screen is for the phone's own data and is hidden in Server
 **Requirements:** JDK 17+, Android SDK (API 35, Build Tools 35+) and Go 1.23+ for the bridge.
 
 ```bash
-git clone https://github.com/santoshkurmi/antigem.git
-cd antigem
+git clone https://github.com/sagarku03/Agentra.git
+cd Agentra
 
 # Build the termux variant
 ./gradlew assembleTermuxDebug

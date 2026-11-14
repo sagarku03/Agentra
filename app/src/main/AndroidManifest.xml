@@ -36,7 +36,7 @@
     <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
 
     <application
-        android:name=".AntiGemApplication"
+        android:name=".AgentraApplication"
         android:allowBackup="true"
         android:largeHeap="true"
         android:hasFragileUserData="true"
@@ -325,7 +325,7 @@
 
         <!-- Device Admin Receiver for Accidental Uninstall Protection -->
         <receiver
-            android:name="com.example.gemini.data.admin.AntiGemDeviceAdminReceiver"
+            android:name="com.example.gemini.data.admin.AgentraDeviceAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:exported="true">
             <meta-data

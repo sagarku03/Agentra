@@ -1275,7 +1275,7 @@ private fun TermuxApiSubScreen(cardBg: Color, cardBorder: BorderStroke) {
                                     OutlinedButton(
                                         onClick = {
                                             try {
-                                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/santoshkurmi/termux-api/releases"))
+                                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/termux/termux-api/releases"))
                                                 context.startActivity(intent)
                                             } catch (_: Exception) {}
                                         },
@@ -1362,7 +1362,7 @@ private fun TermuxApiSubScreen(cardBg: Color, cardBorder: BorderStroke) {
                     OutlinedButton(
                         onClick = {
                             try {
-                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/santoshkurmi/termux-api/releases"))
+                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/termux/termux-api/releases"))
                                 context.startActivity(intent)
                             } catch (_: Exception) {}
                         },
@@ -7979,15 +7979,15 @@ private fun DiagnosticsSubScreen(
     cardBorder: BorderStroke
 ) {
     DisposableEffect(isFloatingDiagnosticsEnabled) {
-        com.example.gemini.data.remote.core.AntiGemLiveDiagnostics.start()
+        com.example.gemini.data.remote.core.AgentraLiveDiagnostics.start()
         onDispose {
             if (!isFloatingDiagnosticsEnabled) {
-                com.example.gemini.data.remote.core.AntiGemLiveDiagnostics.stop()
+                com.example.gemini.data.remote.core.AgentraLiveDiagnostics.stop()
             }
         }
     }
 
-    val snapshot by com.example.gemini.data.remote.core.AntiGemLiveDiagnostics.snapshot.collectAsState()
+    val snapshot by com.example.gemini.data.remote.core.AgentraLiveDiagnostics.snapshot.collectAsState()
     val logs by com.example.gemini.data.remote.inspector.NetworkInspectorManager.logs.collectAsState()
     val activeStreams by com.example.gemini.data.remote.inspector.NetworkInspectorManager.activeStreamsCount.collectAsState()
     val context = androidx.compose.ui.platform.LocalContext.current

@@ -7,7 +7,7 @@ import com.example.gemini.data.updater.PluginUpdateCheckWorker
 import com.example.gemini.data.updater.UpdateCheckWorker
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 
-class AntiGemApplication : Application(), coil.ImageLoaderFactory {
+class AgentraApplication : Application(), coil.ImageLoaderFactory {
     /**
      * Images that live on the bridge (a server's files, attachments) need the security header, which Coil's
      * default client does not send. Only requests to the bridge address get it.

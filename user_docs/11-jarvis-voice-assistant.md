@@ -60,7 +60,7 @@ Every sub-page under **Settings → Jarvis** controls a specific capability:
 
 ### C. Personality & you (`JARVIS_PERSONALITY`)
 - **"Jarvis speaks as"**: Set grammatical self-address to **"Female"**, **"Male"**, **"Neutral"**, or **"Not set"** (essential for gendered languages like Hindi).
-- **"About you and extra instructions"**: Multi-line instructions sent on the first message of every new Jarvis chat (e.g., *"Call me Santosh. Reply in Hinglish. I mostly work on the antigem project."*).
+- **"About you and extra instructions"**: Multi-line instructions sent on the first message of every new Jarvis chat (e.g., *"Call me Sir. Reply in Hinglish. I mostly work on the Agentra project."*).
 - **"Jarvis memory (Jarvis can edit this too)"**: A persistent memory scratchpad that Jarvis can read and edit on its own across sessions.
 
 ### D. Waking Jarvis (`JARVIS_WAKE`)
